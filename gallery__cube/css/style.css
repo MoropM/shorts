@@ -1,0 +1,35 @@
+.content__gallery {
+    background-color: #1a1a1a;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 3rem;
+}
+.gallery {
+    --s: 250px; /* the size */
+    display: grid;
+    transform-style: preserve-3d;
+    --_p: perspective(calc(2.5 * var(--s)));
+    animation: cube 9s infinite cubic-bezier(0.5, -0.5, 0.5, 1.5);
+    position: relative;
+}
+.gallery img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1;
+    object-fit: cover;
+    transform: var(--_t, ) translateZ(calc(var(--s) / 2));
+}
+.gallery img:nth-child(2) { --_t: rotateX(-90deg);}
+.gallery img:nth-child(3) { --_t: rotateY(90deg);}
+.gallery img:nth-child(4) { --_t: rotateX(180deg) rotate(90deg);}
+.gallery img:nth-child(5) { --_t: rotateX(90deg);}
+.gallery img:nth-child(6) { --_t: rotateY(-90deg);}
+
+@keyframes cube {
+    0%, 3% { transform: var(--_p) rotate3d(0, 0, 0, 0deg);}
+    14%, 19% { transform: var(--_p) rotate3d(-1, 1, 0, 180deg);}
+    31%, 36% { transform: var(--_p) rotate3d(0, -1, 0, 90deg);}
+    47%, 52% { transform: var(--_p) rotate3d(1, 0, 0, 90deg);}
+    64%, 69% { transform: var(--_p) rotate3d(1, 0, 0, -90deg);}
+}

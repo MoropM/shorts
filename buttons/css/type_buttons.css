@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn__type1,
+.btn__type2,
+.btn__type3 {
+    min-width: 12rem;
+    max-width: 70vw;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* .btn__type1 {
+    background-color: aliceblue;
+}
+.btn__type2 {
+    background-color: antiquewhite;
+}
+.btn__type3 {
+    background-color: aquamarine;
+} */
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+
+.btn-concave-rounded {
+    border-radius: 150px;
+    background: linear-gradient(145deg, #d4d5df, #fdfeff);
+    box-shadow: 6px 6px 12px #c9c9d3, -6px -6px 12px #fff;
+}
+.btn-pressed {
+    border-radius: 20px;
+    background: #ecedf8;
+    box-shadow: inset 6px 6px 12px #c9c9d3, inset -6px -6px 12px #fff;
+}
+.btn-pressed:hover {
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fdfeff, #d4d5df);
+    box-shadow: 4px 4px 10px #c9c9d3, -4px -4px 10px #fff;
+}
+
+.btn-convex {
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fdfeff, #d4d5df);
+    box-shadow: 5px 5px 12px #c9c9d3, -5px -5px 12px #fff;
+}
+.btn-convex:hover {
+    border-radius: 20px;
+    background: #ecedf8;
+    box-shadow: inset 6px 6px 12px #c9c9d3, inset -6px -6px 12px #fff;
+}

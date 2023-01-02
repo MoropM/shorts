@@ -1,0 +1,21 @@
+
+.voice-result {
+    background-color: #1a1a1a;
+    color: white;
+    max-width: 35rem;
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 1.3;
+    overflow-y: auto;
+}
+.voice-result p {
+    margin: 0;
+    font-family: monospace;
+}
+.voice-result-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
