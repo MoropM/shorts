@@ -12,6 +12,8 @@
     --background-color: #181621;
     --foreground-color: #211f2a;
     --blend-mode: lighten;
+
+    transition: all .3;
 }
 
 * {
@@ -70,7 +72,7 @@ body {
     display: flex;
     background-color: var(--foreground-color);
     box-shadow: .5rem .5rem 1rem rgba(0 0 0 / 25%);
-    transition: background-color .25s;
+    transition: background-color .8s;
 }
 
 .card__image {
